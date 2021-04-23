@@ -33,13 +33,13 @@ spec:
 #            value: http://currency-exchange
         livenessProbe:
           httpGet:
-            path: /healthcheck
+            path: /communication/healthcheck
             port: 8100
           initialDelaySeconds: 80
           periodSeconds: 10
         readinessProbe:
           httpGet:
-            path: /healthcheck
+            path: /communication/healthcheck
             port: 8100
           initialDelaySeconds: 80
           periodSeconds: 10
