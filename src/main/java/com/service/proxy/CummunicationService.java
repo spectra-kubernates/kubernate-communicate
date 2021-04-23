@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(name = "demo-communicate")//Kubernetes Service Name
 @RibbonClient(name = "demo-communicate")
 public interface CummunicationService {
-	@GetMapping("/demo-communicate")
+	@GetMapping("/demo-communicate/demo-communicate")
 	public String retrieveExchangeValue();
 }
